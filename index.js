@@ -24,7 +24,7 @@ const newVelocity = calcNewVel(accelerationMeterPerS2, initVelocity, timeInSecon
 
 
 
-console.log(`Corrected New Velocity: ${newVelocity} km/h`);
+console.log(`Corrected New Velocity: ${newVelocity * 3.6} km/h`); //the *3.6 is to convert m/s back to km/h
 console.log(`Corrected New Distance: ${newDistance} km`);
 console.log(`Corrected Remaining Fuel: ${endRemaningFuel} kg`);
 
