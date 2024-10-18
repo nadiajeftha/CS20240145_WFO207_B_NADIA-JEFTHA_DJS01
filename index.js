@@ -19,14 +19,14 @@ const calcNewVel = (accelerationMeterPerS2, initVelocity, timeInSeconds) => {
 }
 
 const newDistance = (initVelocity*timeInSeconds)+(0.5*accelerationMeterPerS2*(timeInSeconds**2) )//calcultes new distance
-const endRemaningFuel = initFuelRemaining - (fuelBurnRate*timeInSeconds) //calculates remaining fuel
+const endRemainingFuel = initFuelRemaining - (fuelBurnRate*timeInSeconds) //calculates remaining fuel
 const newVelocity = calcNewVel(accelerationMeterPerS2, initVelocity, timeInSeconds) //calculates new velocity based on acceleration
 
 
 
 console.log(`Corrected New Velocity: ${newVelocity * 3.6} km/h`); //the *3.6 is to convert m/s back to km/h
 console.log(`Corrected New Distance: ${newDistance} km`);
-console.log(`Corrected Remaining Fuel: ${endRemaningFuel} kg`);
+console.log(`Corrected Remaining Fuel: ${endRemainingFuel} kg`);
 
 
 
